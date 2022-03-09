@@ -18,7 +18,7 @@ const Button = ({ className, value, type }) => {
       : type === "equal"
       ? equalsClickHandler
       : numClickHandler;
-  type == "equal" && console.log(handleClick);
+  type === "equal" && console.log(handleClick);
   return (
     <ButtonComponent>
       <button className={className} onClick={handleClick}>
